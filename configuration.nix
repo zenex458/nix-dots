@@ -72,6 +72,7 @@
       tree
       htop
       gitFull
+      magic-wormhole
     ];
   };
 
