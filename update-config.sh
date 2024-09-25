@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-if [[! -e /home/matt/.config/home-manager/home.nix]]; then
+if [[ !(-e /home/matt/.config/home-manager/home.nix)]]; then
 	mkdir /home/matt/.config/home-manager
 	cp -r ./home-manager/* /home/matt/.config/home-manager
 	home-manager switch
