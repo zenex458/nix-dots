@@ -9,7 +9,9 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
     ];
-
+  nixpkgs.config = {
+    allowUnfree = true;
+  };
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -73,6 +75,7 @@
       htop
       gitFull
       magic-wormhole
+      sublime
     ];
   };
 
@@ -129,7 +132,5 @@
   # For more information, see `man configuration.nix` or https://nixos.org/manual/nixos/stable/options#opt-system.stateVersion .
   system.stateVersion = "24.05"; # Did you read the comment?
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  nixpkgs.config.allowUnfree = true;
-
 }
 

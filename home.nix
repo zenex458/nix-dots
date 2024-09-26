@@ -71,6 +71,15 @@
     # EDITOR = "emacs";
   };
 
+  programs.bash = {
+    enable = true;
+    historyFile = "$HOME/.local/share/.bash_history";
+    enableCompletion = true;
+    shellAliases = {
+      updateme = "cd /home/matt/Documents/Git/nix-dots && ./update-config.sh";
+    };
+  };
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
