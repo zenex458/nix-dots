@@ -76,7 +76,7 @@
     historyFile = "$HOME/.local/share/.bash_history";
     enableCompletion = true;
     shellAliases = {
-      updateme = "cd /home/matt/Documents/Git/nix-dots && ./update-config.sh";
+      updateme = "(cd /home/matt/Documents/Git/nix-dots && ./uupdate-config.sh)";
     };
   };
 
