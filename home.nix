@@ -77,7 +77,7 @@
     enableCompletion = true;
     shellAliases = {
       init-mattnix = "mkdir $HOME/Nixstuff && git clone https://github.com/Ghx0sty/nix-dots $HOME/Nixstuff";
-      updateme = "temp=$(pwd) && cd $HOME/Nixstuff && ./update-config.sh && cd $temp";
+      update-nix = "temp=$(pwd) && cd $HOME/Nixstuff && ./update-config.sh && cd $temp";
     };
   };
 
