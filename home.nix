@@ -76,7 +76,8 @@
     historyFile = "$HOME/.local/share/.bash_history";
     enableCompletion = true;
     shellAliases = {
-      updateme = "temp=$(pwd) && cd /home/matt/Documents/Git/nix-dots && ./update-config.sh && cd $temp";
+      init-mattnix = "mkdir $HOME/Nixstuff && git clone https://github.com/Ghx0sty/nix-dots $HOME/Nixstuff";
+      updateme = "temp=$(pwd) && cd $HOME/Nixstuff && ./update-config.sh && cd $temp";
     };
   };
 
