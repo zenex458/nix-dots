@@ -102,7 +102,7 @@
   ];
   fonts.packages = with pkgs; [ 
   _0xproto 
-  (nerdfonts.override { fonts = [ "FiraCode" ]; }) 
+  (nerdfonts.override { fonts = [ "FiraCode" "Lilex" ]; }) 
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
