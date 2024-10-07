@@ -33,7 +33,7 @@
   console = {
   #   font = "Lat2-Terminus16";
     keyMap = "uk";
-    font = "NotoSerifNerdFont";
+    font = "NotoSerifNerdFontPropo-ExtraCondensedMedium";
   #   useXkbConfig = true; # use xkb.options in tty.
   };
 
