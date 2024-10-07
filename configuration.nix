@@ -97,7 +97,7 @@
     git
     home-manager
   ];
-  fonts.packages = with pkgs; [ _0xproto ];
+  fonts.packages = with pkgs; [ (nerdfonts.override { fonts = [ "_0xproto" ]; }) ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
