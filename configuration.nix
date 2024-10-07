@@ -97,7 +97,7 @@
     graphviz
     nano
     git
-    wl-clipboard
+    wl-clipboard-rs
     konsave
     home-manager
     zsh-syntax-highlighting
