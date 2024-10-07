@@ -103,6 +103,11 @@
     zsh-syntax-highlighting
     zsh-autosuggestions
   ];
+  environment.plasma6.excludePackages = with pkgs.kdePackages; [
+  plasma-browser-integration
+  konsole
+  elisa
+];
   fonts.packages = with pkgs; [ 
   _0xproto 
   (nerdfonts.override { fonts = [ "FiraCode" "Lilex" "Noto" ]; }) 
