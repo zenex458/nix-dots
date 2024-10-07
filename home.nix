@@ -91,8 +91,8 @@
     };
     oh-my-zsh = {
       enable = true;
-      plugins = [];
-      theme = "robbyrussel";
+      plugins = [git zsh-syntax-highlighting zsh-autosuggestions];
+      theme = "xiong-chiamiov-plus";
     };
   };
 
