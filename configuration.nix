@@ -87,7 +87,7 @@
     zsh
     oh-my-zsh
     kitty
-    lvim
+    lunarvim
     wget
     nano
     git
