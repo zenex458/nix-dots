@@ -69,7 +69,7 @@
   users.users.matt = {
     isNormalUser = true;
     extraGroups = [ "networkmanager" "wheel" ]; # Enable ‘sudo’ for the user.
-    shells = pkgs.zsh;
+    shell = pkgs.zsh;
     packages = with pkgs; [
       tree
       htop
@@ -87,6 +87,7 @@
     zsh
     oh-my-zsh
     kitty
+    lvim
     wget
     nano
     git
