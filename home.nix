@@ -71,6 +71,9 @@
       update-nix = "temp=$(pwd) && cd $HOME/Nixstuff && ./update-config.sh && cd $temp";
     };
   };
+  environment.systemPackages = [
+  pkgs.zsh-autosuggestions
+  ]
   
   programs.zsh = {
     enable = true;
@@ -85,7 +88,7 @@
       enable = true;
       plugins = [ 
       "git" 
-      { name = "zsh-syntax-highlighting"; url = "https://github.com/zsh-users/zsh-syntax-highlighting"; }
+      "zsh-autosuggestions"
       ];
       theme = "xiong-chiamiov-plus";
     };
