@@ -70,7 +70,6 @@
     isNormalUser = true;
     extraGroups = [ "networkmanager" "wheel" ]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [
-      firefox
       tree
       htop
       gitFull
@@ -83,6 +82,9 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    librewolf
+    zsh
+    oh-my-zsh
     wget
     nano
     git
