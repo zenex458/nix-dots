@@ -79,7 +79,7 @@
     ];
   };
   programs.zsh.enable = true;
-  users.defaultUserShell = pkgs.zsh
+  users.defaultUserShell = pkgs.zsh;
   environment.shells = with pkgs; [ zsh ];
 
   # List packages installed in system profile. To search, run:
