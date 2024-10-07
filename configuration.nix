@@ -91,6 +91,7 @@
     oh-my-zsh
     kitty
     lunarvim
+    make
     wget
     nano
     git
