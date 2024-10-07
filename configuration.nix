@@ -95,7 +95,7 @@
     wget
     nano
     git
-    wl-keyboard
+    wl-clipboard
     konsave
     home-manager
     zsh-syntax-highlighting
