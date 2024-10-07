@@ -94,6 +94,7 @@
     gnumake
     wget
     nix-du
+    graphviz
     nano
     git
     wl-clipboard
