@@ -93,6 +93,7 @@
     lunarvim
     gnumake
     wget
+    nix-du
     nano
     git
     wl-clipboard
