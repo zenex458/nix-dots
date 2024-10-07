@@ -22,9 +22,9 @@
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
-  home.packages = [
-  pkgs.zsh-syntax-highlighting
-  pkgs.zsh-autosuggestions
+  home.packages = with pkgs; [
+  zsh-syntax-highlighting
+  zsh-autosuggestions
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -71,14 +71,14 @@
       update-nix = "temp=$(pwd) && cd $HOME/Nixstuff && ./update-config.sh && cd $temp";
     };
   };
-  environment.systemPackages = [
-  pkgs.zsh-autosuggestions
-  ];
   
   programs.zsh = {
     enable = true;
     enableCompletion = true;
     syntaxHighlighting.enable = true;
+    plugins = [
+    { name = "zsh-autosuggestions"; src = pkgs.zsh-autosuggestions; }
+    { name = "zsh-syntax-highlighting"; src = pkgs.zsh-syntax-highlighting; }
     ];
     shellAliases = {
       init-mattnix = "mkdir $HOME/Nixstuff && git clone https://github.com/Ghx0sty/nix-dots $HOME/Nixstuff";
@@ -87,8 +87,7 @@
     oh-my-zsh = {
       enable = true;
       plugins = [ 
-      "git" 
-      "zsh-autosuggestions"
+      "git"
       ];
       theme = "xiong-chiamiov-plus";
     };
