@@ -83,6 +83,7 @@
       src = pkgs.fetchFromGitHub {
         owner = "zsh-users";
         repo = "zsh-autosuggestions";
+        rev = "5.0.0";
       };
     }
     { name = "zsh-syntax-highlighting"; src = pkgs.zsh-syntax-highlighting; }
