@@ -32,7 +32,7 @@
   i18n.defaultLocale = "en_GB.UTF-8";
   console = {
     keyMap = "uk";
-    font = "Lilex";
+    font = "FiraCode";
   #   useXkbConfig = true; # use xkb.options in tty.
   };
 
