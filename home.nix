@@ -94,6 +94,7 @@
       enable = true;
       plugins = [];
       theme = "robbyrussel";
+    };
   }
 
   # Let Home Manager install and manage itself.
