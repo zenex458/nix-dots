@@ -32,7 +32,6 @@
 						home-manager.useUserPackages = true;
 						home-manager.users.matt = import ./home.nix;
 					}
-					plasma-manager.homeManagerModules.plasma-manager
 				];
 			};	
 		};
