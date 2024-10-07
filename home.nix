@@ -76,6 +76,12 @@
     enable = true;
     enableCompletion = true;
     syntaxHighlighting.enable = true;
+    plugins = [
+      {
+      name = "zsh-autosuggestions";
+      src = pkgs.zsh-autosuggestions;
+      }
+    ];
     shellAliases = {
       init-mattnix = "mkdir $HOME/Nixstuff && git clone https://github.com/Ghx0sty/nix-dots $HOME/Nixstuff";
       update-nix = "temp=$(pwd) && cd $HOME/Nixstuff && ./update-config.sh && cd $temp";
