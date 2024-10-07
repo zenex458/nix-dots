@@ -72,7 +72,7 @@
   };
 
   programs.bash = {
-    enable = true;
+    enable = false;
     historyFile = "$HOME/.local/share/.bash_history";
     enableCompletion = true;
     shellAliases = {
@@ -80,6 +80,21 @@
       update-nix = "temp=$(pwd) && cd $HOME/Nixstuff && ./update-config.sh && cd $temp";
     };
   };
+  
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
+    autosuggestions.enable = true;
+    syntaxHighlighting.enable = true;
+    shellAliases = {
+      init-mattnix = "mkdir $HOME/Nixstuff && git clone https://github.com/Ghx0sty/nix-dots $HOME/Nixstuff";
+      update-nix = "temp=$(pwd) && cd $HOME/Nixstuff && ./update-config.sh && cd $temp";
+    };
+    oh-my-zsh = {
+      enable = true;
+      plugins = [];
+      theme = "robbyrussel";
+  }
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
