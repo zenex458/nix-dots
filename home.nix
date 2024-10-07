@@ -80,11 +80,7 @@
     {
     # will source zsh-autosuggestions.plugin.zsh
     name = "zsh-autosuggestions";
-      src = pkgs.fetchFromGitHub {
-        owner = "zsh-users";
-        repo = "zsh-autosuggestions";
-        rev = "0.7.0";
-      };
+    src = "${pkgs.zsh-autosuggestions}/share/zsh-autosuggestions";
     }
     { name = "zsh-syntax-highlighting"; src = pkgs.zsh-syntax-highlighting; }
     ];
