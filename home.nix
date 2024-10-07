@@ -77,7 +77,14 @@
     enableCompletion = true;
     syntaxHighlighting.enable = true;
     plugins = [
-    { name = "zsh-autosuggestions"; src = pkgs.zsh-autosuggestions; }
+    {
+    # will source zsh-autosuggestions.plugin.zsh
+    name = "zsh-autosuggestions";
+      src = pkgs.fetchFromGitHub {
+        owner = "zsh-users";
+        repo = "zsh-autosuggestions";
+      };
+    }
     { name = "zsh-syntax-highlighting"; src = pkgs.zsh-syntax-highlighting; }
     ];
     shellAliases = {
