@@ -69,7 +69,7 @@
   users.users.matt = {
     isNormalUser = true;
     extraGroups = [ "networkmanager" "wheel" ]; # Enable ‘sudo’ for the user.
-    shell = pkgs.zsh;
+    shell = pkgs.bash;
     packages = with pkgs; [
       tree
       htop
