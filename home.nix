@@ -91,8 +91,9 @@
     };
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" "zsh-syntax-highlighting" "zsh-autosuggestions" ];
+      plugins = [ "git" "zsh-autosuggestions" "zsh-syntax-highlighting" ];
       theme = "xiong-chiamiov-plus";
+      customPkgs = with pkgs; [ zsh-autosuggestions zsh-syntax-highlighting ];
     };
   };
 
