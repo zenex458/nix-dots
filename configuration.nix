@@ -92,6 +92,7 @@
     kitty
     lunarvim
     gnumake
+    nerdfonts
     wget
     nano
     git
