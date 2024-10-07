@@ -73,7 +73,7 @@
   };
   environment.systemPackages = [
   pkgs.zsh-autosuggestions
-  ]
+  ];
   
   programs.zsh = {
     enable = true;
