@@ -95,6 +95,8 @@
     wget
     nano
     git
+    wl-keyboard
+    konsave
     home-manager
     zsh-syntax-highlighting
     zsh-autosuggestions
