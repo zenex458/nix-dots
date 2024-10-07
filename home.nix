@@ -81,6 +81,11 @@
       theme = "xiong-chiamiov-plus";
     };
   };
+  
+  programs.kitty = {
+  enable = true;
+  font_size = 10;
+  };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
