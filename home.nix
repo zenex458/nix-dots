@@ -76,6 +76,9 @@
     enable = true;
     enableCompletion = true;
     syntaxHighlighting.enable = true;
+    interactiveShellInit = ''
+    source ${pkgs.zsh-autosuggestions}/share/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
+    '';
     plugins = [
     {
     # will source zsh-autosuggestions.plugin.zsh
