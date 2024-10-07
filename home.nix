@@ -76,11 +76,6 @@
     enable = true;
     enableCompletion = true;
     syntaxHighlighting.enable = true;
-    plugins = [
-      {
-      name = "zsh-autosuggestions";
-      src = pkgs.zsh-autosuggestions;
-      }
     ];
     shellAliases = {
       init-mattnix = "mkdir $HOME/Nixstuff && git clone https://github.com/Ghx0sty/nix-dots $HOME/Nixstuff";
@@ -88,7 +83,10 @@
     };
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" ];
+      plugins = [ 
+      "git" 
+      { name = "zsh-syntax-highlighting"; url = "https://github.com/zsh-users/zsh-syntax-highlighting"; }
+      ];
       theme = "xiong-chiamiov-plus";
     };
   };
