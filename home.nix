@@ -85,7 +85,6 @@
     name = "zsh-autosuggestions";
     src = "${pkgs.zsh-autosuggestions}/share/zsh-autosuggestions";
     }
-    { name = "zsh-syntax-highlighting"; src = pkgs.zsh-syntax-highlighting; }
     ];
     shellAliases = {
       init-mattnix = "mkdir $HOME/Nixstuff && git clone https://github.com/Ghx0sty/nix-dots $HOME/Nixstuff";
