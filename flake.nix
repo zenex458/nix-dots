@@ -33,7 +33,6 @@
 						home-manager.users.matt = import ./home.nix;
 					}
 					plasma-manager.homeManagerModules.plasma-manager
-					./home.nix
 				];
 			};	
 		};
