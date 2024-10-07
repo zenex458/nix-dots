@@ -97,6 +97,8 @@
     nano
     git
     home-manager
+    zsh-syntax-highlighting
+    zsh-autosuggestions
   ];
   fonts.packages = with pkgs; [ 
   _0xproto 
