@@ -29,6 +29,7 @@
 					./configuration.nix { nixpkgs.config.allowUnfree = true; }
 					home-manager.nixosModules.home-manager {
 						home-manager.useGlobalPkgs = true;
+						home-manager.sharedModules = [ plasma-manager.homeManagerModules.plasma-manager ];
 						home-manager.useUserPackages = true;
 						home-manager.users.matt = import ./home.nix;
 					}
