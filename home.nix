@@ -63,7 +63,7 @@
   };
 
   programs.bash = {
-    enable = false;
+    enable = true;
     historyFile = "$HOME/.local/share/.bash_history";
     enableCompletion = true;
     shellAliases = {

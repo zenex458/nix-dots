@@ -65,8 +65,9 @@
   # Enable touchpad support (enabled default in most desktopManager).
   services.libinput.enable = true;
 
-virtualisation.libvirtd.enable = true;
-programs.virt-manager.enable = true;
+# Re=enable these for vvirtualisation, you probably won't want it on your laptop lmao
+# virtualisation.libvirtd.enable = true;
+# programs.virt-manager.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.matt = {
