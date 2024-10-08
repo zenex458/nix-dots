@@ -65,10 +65,13 @@
   # Enable touchpad support (enabled default in most desktopManager).
   services.libinput.enable = true;
 
+virtualisation.libvirtd.enable = true;
+programs.virt-manager.enable = true;
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.matt = {
     isNormalUser = true;
-    extraGroups = [ "networkmanager" "wheel" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "networkmanager" "wheel" "libvirtd" ]; # Enable ‘sudo’ for the user.
     shell = pkgs.zsh;
     packages = with pkgs; [
       tree
@@ -95,6 +98,8 @@
     wget
     nix-du
     graphviz
+    distrobox
+    podman
     nano
     git
     wl-clipboard-rs
