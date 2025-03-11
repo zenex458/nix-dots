@@ -18,7 +18,6 @@ git push
 #!/usr/bin/env bash
 #AUTHOR: zenex458
 #URL:https://github.com/zenex458/dots/blob/main/.config/nixos/hosts/eukaryotic/home/scripts/updnix
-#LICENSE ISC: https://www.isc.org/licenses/
 
 ##set -e
 ##echo "Updating nix"
