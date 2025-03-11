@@ -1,10 +1,10 @@
-{ config, pkgs, ... }:
-
-
-
 {
+  config,
+  pkgs,
+  ...
+}: {
   imports = [
-  ./plasma.nix
+    ./plasma.nix
   ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -23,8 +23,8 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-  zsh-syntax-highlighting
-  zsh-autosuggestions
+    zsh-syntax-highlighting
+    zsh-autosuggestions
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -71,20 +71,20 @@
       update-nix = "temp=$(pwd) && cd $HOME/Nixstuff && ./update-config.sh && cd $temp";
     };
   };
-  
+
   programs.zsh = {
     enable = true;
     enableCompletion = true;
     syntaxHighlighting.enable = true;
     initExtra = ''
-    source ${pkgs.zsh-autosuggestions}/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+      source ${pkgs.zsh-autosuggestions}/share/zsh-autosuggestions/zsh-autosuggestions.zsh
     '';
     plugins = [
-    {
-    # will source zsh-autosuggestions.plugin.zsh
-    name = "zsh-autosuggestions";
-    src = "${pkgs.zsh-autosuggestions}/share/zsh-autosuggestions";
-    }
+      {
+        # will source zsh-autosuggestions.plugin.zsh
+        name = "zsh-autosuggestions";
+        src = "${pkgs.zsh-autosuggestions}/share/zsh-autosuggestions";
+      }
     ];
     shellAliases = {
       init-mattnix = "mkdir $HOME/Nixstuff && git clone https://github.com/Ghx0sty/nix-dots $HOME/Nixstuff";
@@ -92,16 +92,16 @@
     };
     oh-my-zsh = {
       enable = true;
-      plugins = [ 
-      "git"
+      plugins = [
+        "git"
       ];
       theme = "xiong-chiamiov-plus";
     };
   };
-  
+
   programs.kitty = {
-  enable = true;
-  extraConfig = "
+    enable = true;
+    extraConfig = "
   font_size 10
   background #163f5b
   background_opacity 0.97
